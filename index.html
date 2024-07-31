@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('Background.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .next-button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0066, #ff66cc);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(255, 0, 102, 0.4);
+        }
+
+        .next-button:hover {
+            background: linear-gradient(45deg, #ff66cc, #ff0066);
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(255, 0, 102, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Example.jpg" alt="Foto" class="photo">
+        <a href="next.html" class="next-button">Next</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
